@@ -132,7 +132,7 @@ async function connectToWA() {
 
 
         if (global.pluginHooks) {
-      fro (const plugin of global.pluginHooks) {
+      for (const plugin of global.pluginHooks) {
         if (plugin.onMessage) {
           try {
             await plugin.onMessage(OSTHAR, mek);
